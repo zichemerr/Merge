@@ -17,8 +17,8 @@ namespace SpawnSystem
 
         public void Init()
         {
+            StartCoroutine(StartSpawnDelay(0));
             _input.Up += OnSpawn;
-            StartCoroutine(StartSpawnDelay());
         }
 
         private void OnDisable()
@@ -31,13 +31,13 @@ namespace SpawnSystem
             if (CanSpawn() == false)
                 return;
 
-            StartCoroutine(StartSpawnDelay());
+            StartCoroutine(StartSpawnDelay(_spawnDelay));
         }
 
-        private IEnumerator StartSpawnDelay()
+        private IEnumerator StartSpawnDelay(float delay)
         {
             _isSpawning = true;
-            yield return new WaitForSeconds(_spawnDelay);
+            yield return new WaitForSeconds(delay);
             _spawning.Spawn(out Circle circle);
             Spawned?.Invoke(circle);
             _isSpawning = false;
