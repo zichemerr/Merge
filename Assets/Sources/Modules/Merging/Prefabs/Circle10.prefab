@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 1918786612678502538}
   - component: {fileID: -8503917313506535157}
   - component: {fileID: 7494679204849766995}
-  - component: {fileID: 4261702906347349938}
+  - component: {fileID: 2947068971535329168}
   m_Layer: 0
-  m_Name: Circle7
+  m_Name: Circle10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c815d66f22097478ddde72a9c72c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextTier: {fileID: -8503917313506535157, guid: 9600f48e07d9da848833e90928959c60, type: 3}
-  _tier: 7
+  _nextTier: {fileID: -8503917313506535157, guid: 2960564cfd458894b98057067ed69935, type: 3}
+  _tier: 10
 --- !u!114 &7494679204849766995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mediator: {fileID: 4121941669261403298, guid: 95090f7bd74203f4499a12980ec4f835, type: 3}
---- !u!114 &4261702906347349938
+--- !u!114 &2947068971535329168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,5 +220,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f32b69123497a548aa5ad05a9fb5628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 6961751956532972570, guid: 9600f48e07d9da848833e90928959c60, type: 3}
+  _rigidbody: {fileID: 6961751956532972570}
   _force: 2

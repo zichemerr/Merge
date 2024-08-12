@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5011848904069141019}
   - component: {fileID: 7381913589799825546}
   - component: {fileID: 3390501102808057545}
-  - component: {fileID: 6862996488725668035}
+  - component: {fileID: -762018157351963664}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d108d489dd9bd62499b9c80bba72e4e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mediator: {fileID: 4839610136823999678, guid: 04aaf938892124c4a8e0ea18b94da481, type: 3}
---- !u!114 &6862996488725668035
+  _mediator: {fileID: 4121941669261403298, guid: 95090f7bd74203f4499a12980ec4f835, type: 3}
+--- !u!114 &-762018157351963664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,8 +217,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2747567697618898041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39b1b4fc9eeca39479bc54928a1c6191, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f32b69123497a548aa5ad05a9fb5628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 4084586295658343775}
+  _rigidbody: {fileID: 6961751956532972570, guid: 9600f48e07d9da848833e90928959c60, type: 3}
   _force: 2

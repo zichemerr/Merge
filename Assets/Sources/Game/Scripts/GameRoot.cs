@@ -5,6 +5,7 @@ using UnityEngine;
 using RestartGame;
 using Finish;
 using FinishToRestart;
+using Score;
 
 namespace Game
 {
@@ -16,6 +17,7 @@ namespace Game
         [SerializeField] private FinishRoot _finishRoot;
         [SerializeField] private GameRestart _gameRestart;
         [SerializeField] private FinishToRestartMediator _finishToRestartMediator;
+        [SerializeField] private ScoreCounter _scoreCounter;
 
         private void Start()
         {
@@ -25,6 +27,7 @@ namespace Game
             _finishRoot.Init();
             _gameRestart.Init();
             _finishToRestartMediator.Init();
+            _scoreCounter.Init();
         }
     }
 }
