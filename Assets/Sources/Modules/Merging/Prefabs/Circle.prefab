@@ -179,8 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 4084586295658343775}
   _collider: {fileID: 7715407557218323158}
-  _maxPosition: 2.2
-  _minPosition: -2.2
+  _maxPosition: 2.1
+  _minPosition: -2.1
 --- !u!114 &7381913589799825546
 MonoBehaviour:
   m_ObjectHideFlags: 0

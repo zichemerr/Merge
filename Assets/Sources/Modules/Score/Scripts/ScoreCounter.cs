@@ -1,5 +1,6 @@
 using UnityEngine;
 using DragToMerge;
+using System;
 
 namespace Score
 {
@@ -9,6 +10,8 @@ namespace Score
         [SerializeField] private ScoreView _scoreView;
 
         private int _score;
+
+        public event Action<int> ScoreChanged;
 
         public void Init()
         {
@@ -23,6 +26,7 @@ namespace Score
         private void OnMerged()
         {
             _score++;
+            ScoreChanged.Invoke(_score);
             _scoreView.ShowDispaly(_score);
         }
     }
