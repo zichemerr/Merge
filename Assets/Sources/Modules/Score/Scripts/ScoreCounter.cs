@@ -1,6 +1,7 @@
 using UnityEngine;
 using DragToMerge;
 using System;
+using YG;
 
 namespace Score
 {
@@ -15,6 +16,7 @@ namespace Score
 
         public void Init()
         {
+            _score = Load();
             _mediator.Merged += OnMerged;
         }
 
@@ -23,11 +25,23 @@ namespace Score
             _mediator.Merged -= OnMerged;
         }
 
-        private void OnMerged()
+        private void OnMerged(int reward)
         {
-            _score++;
+            if (reward < 0)
+                return;
+
+            _score += reward;
+            Save();
             ScoreChanged.Invoke(_score);
             _scoreView.ShowDispaly(_score);
         }
+
+        private void Save()
+        {
+            YandexGame.savesData.Score = _score;
+            YandexGame.SaveProgress();
+        }
+
+        private int Load() => YandexGame.savesData.Score;
     }
 }

@@ -1,4 +1,3 @@
-using Drag;
 using UnityEngine;
 using Merging;
 using System;
@@ -9,10 +8,10 @@ namespace DragToMerge
     {
         [SerializeField] private MergeSystem _mergeSystem;
 
-        public event Action Merged;
+        public event Action<int> Merged;
         private int _van;
 
-        public void Merge(MergableItem firstMergableItem, MergableItem secondMergableItem)
+        public void Merge(MergableItem firstMergableItem, MergableItem secondMergableItem, int reward)
         {
             if (_van > 0)
             {
@@ -26,7 +25,7 @@ namespace DragToMerge
             if (mergeCompleted == true)
             {
                 newMergableItem.GetComponent<Jumping>().Jump(3);
-                Merged?.Invoke();
+                Merged?.Invoke(reward);
             }
 
         }

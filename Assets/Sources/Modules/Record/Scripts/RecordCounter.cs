@@ -6,8 +6,8 @@ namespace Record
 {
     public class RecordCounter : MonoBehaviour
     {
-        [SerializeField] private RecordView _recordView;
         [SerializeField] private ScoreCounter _scoreCounter;
+        [SerializeField] private RecordView _recordView;
 
         private int _record;
 
