@@ -22,7 +22,9 @@ namespace Merging
         {
             MergableItem newItem = firstItem.CreateNextTierInstance();
             newItem.GetComponent<Circle>().SetPosition(firstItem.transform.position);
-            newItem.GetComponent<Dragable>().Disable();
+            Dragable dragable = newItem.GetComponent<Dragable>();
+			dragable.Init();
+			dragable.Disable();
 
             firstItem.Destroy();
             secondItem.Destroy();

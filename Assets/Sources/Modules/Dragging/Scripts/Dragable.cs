@@ -5,10 +5,17 @@ namespace Drag
     [RequireComponent(typeof(Rigidbody2D))]
     public class Dragable : MonoBehaviour
     {
-        [SerializeField] private Rigidbody2D _rigidbody;
-        [SerializeField] private Collider2D _collider;
         [SerializeField] private float _maxPosition;
         [SerializeField] private float _minPosition;
+
+        private Rigidbody2D _rigidbody;
+        private Collider2D _collider;
+
+		internal void Init()
+        {
+			_rigidbody = GetComponent<Rigidbody2D>();
+			_collider = GetComponent<Collider2D>();
+		}
 
         private Vector2 SetFrames(Vector2 newPosition)
         {
@@ -34,7 +41,7 @@ namespace Drag
             _rigidbody.isKinematic = false;
             _collider.isTrigger = false;
             _rigidbody.AddForce(-Vector2.up * 8, ForceMode2D.Impulse);
-            Destroy(GetComponent<Dragable>());
+            Destroy(this);
         }
     }
 }

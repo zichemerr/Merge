@@ -11,7 +11,7 @@ namespace Drag
 
         public void Init()
         {
-            _input.Pressed += OnPressed;
+			_input.Pressed += OnPressed;
             _input.Up += OnUp;
         }
 
@@ -24,7 +24,8 @@ namespace Drag
         public void SetDragable(Circle circle)
         {
             _dragable = circle.GetComponent<Dragable>();
-        }
+			_dragable.Init();
+		}
 
         private void OnPressed()
         {

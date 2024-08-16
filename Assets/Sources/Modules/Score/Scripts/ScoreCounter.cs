@@ -16,8 +16,9 @@ namespace Score
 
         public void Init()
         {
-            _score = Load();
-            _mediator.Merged += OnMerged;
+            _score = YandexGame.savesData.Score;
+			_scoreView.ShowDispaly(_score);
+			_mediator.Merged += OnMerged;
         }
 
         private void OnDisable()
@@ -41,7 +42,5 @@ namespace Score
             YandexGame.savesData.Score = _score;
             YandexGame.SaveProgress();
         }
-
-        private int Load() => YandexGame.savesData.Score;
     }
 }
