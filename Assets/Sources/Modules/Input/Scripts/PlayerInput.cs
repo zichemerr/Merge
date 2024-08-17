@@ -5,8 +5,13 @@ public class PlayerInput : MonoBehaviour
 {
     public event Action Pressed, Up;
 
+    private bool _isActive = true;
+
     private void Update()
     {
+        if (_isActive == false)
+            return;
+
         Pressed?.Invoke();
 
         if (Input.GetMouseButtonUp(0))
@@ -19,4 +24,9 @@ public class PlayerInput : MonoBehaviour
         cursorPostion.y = transform.position.y;
         return cursorPostion;
     }
+
+    public void Deactivate()
+    {
+        _isActive = false;
+	}
 }

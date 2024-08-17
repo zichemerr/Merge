@@ -144,6 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxPosition: 1.7
   _minPosition: -1.7
+  _gravity: 12
 --- !u!114 &-8503917313506535157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mediator: {fileID: 4121941669261403298, guid: 95090f7bd74203f4499a12980ec4f835, type: 3}
-  _reward: 2
+  _reward: 6
 --- !u!114 &1508055996064938219
 MonoBehaviour:
   m_ObjectHideFlags: 0

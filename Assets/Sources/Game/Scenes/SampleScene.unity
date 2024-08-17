@@ -342,6 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9486b16d2634ea0429b7158f89ccb94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _restart: {fileID: 698841577}
   _mediator: {fileID: 4121941669261403298, guid: 95090f7bd74203f4499a12980ec4f835, type: 3}
   _scoreView: {fileID: 55532772}
 --- !u!4 &55532774
@@ -1563,6 +1564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _restartButton: {fileID: 1727756222}
+  _playerInput: {fileID: 1952954959}
 --- !u!4 &698841578
 Transform:
   m_ObjectHideFlags: 0

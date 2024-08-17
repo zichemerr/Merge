@@ -180,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxPosition: 1.7
   _minPosition: -1.7
+  _gravity: 12
 --- !u!114 &7381913589799825546
 MonoBehaviour:
   m_ObjectHideFlags: 0

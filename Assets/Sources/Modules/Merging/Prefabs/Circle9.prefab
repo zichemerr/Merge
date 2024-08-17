@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxPosition: 6
   _minPosition: -6
+  _gravity: 12
 --- !u!114 &-8503917313506535157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c815d66f22097478ddde72a9c72c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _nextTier: {fileID: -8503917313506535157, guid: b59e0e0d83dd2074089e0280e75dce96, type: 3}
+  _nextTier: {fileID: 0}
   _tier: 9
 --- !u!114 &7494679204849766995
 MonoBehaviour:

@@ -7,6 +7,7 @@ namespace Drag
     {
         [SerializeField] private float _maxPosition;
         [SerializeField] private float _minPosition;
+		[SerializeField] private float _gravity;
 
         private Rigidbody2D _rigidbody;
         private Collider2D _collider;
@@ -40,7 +41,7 @@ namespace Drag
         {
             _rigidbody.isKinematic = false;
             _collider.isTrigger = false;
-            _rigidbody.AddForce(-Vector2.up * 8, ForceMode2D.Impulse);
+            _rigidbody.AddForce(-Vector2.up * _gravity, ForceMode2D.Impulse);
             Destroy(this);
         }
     }
