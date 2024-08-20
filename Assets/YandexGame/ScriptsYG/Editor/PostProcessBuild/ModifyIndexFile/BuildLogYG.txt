@@ -1,2 +1,7 @@
+<<<<<<< Updated upstream
 Build path: C:/WebGl/Merge
 Build number: 6
+=======
+Build path: D:/Builds/MergeYG
+Build number: 7
+>>>>>>> Stashed changes

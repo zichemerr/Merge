@@ -186,7 +186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6961751956532972570, guid: d4169657226455541b9ff1dff5b8d050, type: 3}
+<<<<<<< Updated upstream
   _force: 4
+=======
+>>>>>>> Stashed changes
 --- !u!70 &8676274777840904225
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -216,9 +219,9 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.22603293, y: -0.19716665}
-  m_Size: {x: 2.5294974, y: 2.4044764}
+  m_Offset: {x: 0.28, y: -0.19716665}
+  m_Size: {x: 3.17, y: 2.48}
   m_Direction: 1

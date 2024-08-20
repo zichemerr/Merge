@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8503917313506535157}
   - component: {fileID: 7494679204849766995}
   - component: {fileID: -7976235938315977921}
-  - component: {fileID: 240918031808832289}
+  - component: {fileID: 3525734107372045862}
   m_Layer: 0
   m_Name: Circle13
   m_TagString: Untagged
@@ -186,9 +186,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6961751956532972570, guid: d4169657226455541b9ff1dff5b8d050, type: 3}
+<<<<<<< Updated upstream
   _force: 4
 --- !u!68 &240918031808832289
 EdgeCollider2D:
+=======
+--- !u!70 &3525734107372045862
+CapsuleCollider2D:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -216,25 +221,9 @@ EdgeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.16072664, y: 0.8153405}
-  - {x: 0.087430835, y: -0.49508905}
-  - {x: -0.9590034, y: -1.0015082}
-  - {x: -0.8744482, y: -1.5246129}
-  - {x: -1.091396, y: -2.0666327}
-  - {x: 0.7500216, y: -2.2327785}
-  - {x: 1.5343245, y: -1.9704146}
-  - {x: 2.0668247, y: -1.59446}
-  - {x: 1.7184781, y: 1.1562033}
-  - {x: 1.1897774, y: 1.3076658}
-  - {x: 0.56132936, y: 1.2571883}
-  - {x: -0.15286613, y: 0.8404279}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Offset: {x: 0.46, y: -0.43}
+  m_Size: {x: 3.99, y: 3.61}
+  m_Direction: 1

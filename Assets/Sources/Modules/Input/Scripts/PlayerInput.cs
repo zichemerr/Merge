@@ -29,4 +29,9 @@ public class PlayerInput : MonoBehaviour
     {
         _isActive = false;
 	}
+
+    public void Activate()
+    {
+        _isActive = true;
+    }
 }

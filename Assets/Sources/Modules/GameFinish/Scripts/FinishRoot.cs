@@ -1,5 +1,6 @@
 ﻿using Circe;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Finish
@@ -33,6 +34,16 @@ namespace Finish
         {
             Time.timeScale = 0;
             _finishAction?.Invoke();
+        }
+
+        public List<Circle> DestroyCircless()
+        {
+            return _loseDetection.DestroyCircles();
+        }
+
+        public void Delay()
+        {
+            _loseDetection.StartDelay(3);
         }
 
         public void SetFinishAction(Action finish)

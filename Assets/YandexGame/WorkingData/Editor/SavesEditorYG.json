@@ -1,10 +1,18 @@
 {
+<<<<<<< Updated upstream
     "idSave": 6430,
+=======
+    "idSave": 8876,
+>>>>>>> Stashed changes
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
     "money": 1,
+<<<<<<< Updated upstream
     "Score": 142,
+=======
+    "Score": 0,
+>>>>>>> Stashed changes
     "Record": 8544,
     "newPlayerName": "Hello!",
     "openLevels": [

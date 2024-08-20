@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using Finish;
 
 namespace RestartGame
 {
@@ -8,6 +9,7 @@ namespace RestartGame
     {
         [SerializeField] private ButtonRestart _restartButton;
         [SerializeField] private PlayerInput _playerInput;
+        [SerializeField] private GameObject _restartMenu;
 
         private int _indexActiveScene;
 
@@ -27,7 +29,7 @@ namespace RestartGame
 
         public void Enable()
         {
-            _restartButton.Enable();
+            _restartMenu.SetActive(true);
 			_playerInput.Deactivate();
 		}
     }

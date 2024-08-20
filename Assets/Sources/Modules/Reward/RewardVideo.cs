@@ -1,18 +1,15 @@
-﻿using UnityEngine;
-using System;
 using Michsky.MUIP;
+using UnityEngine;
+using YG;
 
-namespace RestartGame
+namespace Reward
 {
-    internal class ButtonRestart : MonoBehaviour
+    public class RewardVideo : MonoBehaviour
     {
         [SerializeField] private ButtonManager _buttonManager;
 
-        private Action _clickAction;
-
-        internal void Init(Action clickAction)
+        private void OnEnable()
         {
-            _clickAction = clickAction;
             _buttonManager.onClick.AddListener(OnClick);
         }
 
@@ -23,8 +20,8 @@ namespace RestartGame
 
         private void OnClick()
         {
-            _clickAction?.Invoke();
+            YandexGame.RewVideoShow(0);
         }
     }
-}
 
+}

@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 3390501102808057545}
   - component: {fileID: 5379021503739177262}
   - component: {fileID: -5504538160729786545}
-  - component: {fileID: 7609264868343689651}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -149,7 +148,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.66}
@@ -235,6 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6961751956532972570, guid: d4169657226455541b9ff1dff5b8d050, type: 3}
+<<<<<<< Updated upstream
   _force: 4
 --- !u!95 &7609264868343689651
 Animator:
@@ -257,3 +257,5 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+=======
+>>>>>>> Stashed changes
