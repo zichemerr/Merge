@@ -24,7 +24,7 @@ namespace DragToMerge
 
             if (mergeCompleted == true)
             {
-                newMergableItem.GetComponent<Jumping>().Jump(3);
+                newMergableItem.GetComponent<Jumping>().Jump(10);
                 Merged?.Invoke(reward);
             }
 

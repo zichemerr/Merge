@@ -186,7 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6961751956532972570, guid: d4169657226455541b9ff1dff5b8d050, type: 3}
-  _force: 0
 --- !u!70 &8059320923885374468
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -219,6 +218,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.03, y: 1.62}
+  m_Offset: {x: 0.03, y: 0}
+  m_Size: {x: 2.61, y: 1.66}
   m_Direction: 1
