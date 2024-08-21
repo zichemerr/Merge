@@ -36,11 +36,6 @@ namespace Finish
             _finishAction?.Invoke();
         }
 
-        public List<Circle> DestroyCircless()
-        {
-            return _loseDetection.DestroyCircles();
-        }
-
         public void Delay()
         {
             _loseDetection.StartDelay(3);

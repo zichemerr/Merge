@@ -34,7 +34,7 @@ namespace SpawnSystem
             StartCoroutine(StartSpawnDelay(_spawnDelay));
         }
 
-        private IEnumerator StartSpawnDelay(float delay)
+        public IEnumerator StartSpawnDelay(float delay)
         {
             _isSpawning = true;
             yield return new WaitForSeconds(delay);

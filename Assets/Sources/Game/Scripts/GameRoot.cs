@@ -7,6 +7,7 @@ using Finish;
 using FinishToRestart;
 using Score;
 using Record;
+using GameContinuation;
 
 namespace Game
 {
@@ -20,6 +21,7 @@ namespace Game
         [SerializeField] private FinishToRestartMediator _finishToRestartMediator;
         [SerializeField] private ScoreCounter _scoreCounter;
         [SerializeField] private RecordCounter _recordCounter;
+        [SerializeField] private ContinuationGame _continuationGame;
 
         private void Start()
         {
@@ -31,6 +33,7 @@ namespace Game
             _finishToRestartMediator.Init();
             _scoreCounter.Init();
             _recordCounter.Init();
+            _continuationGame.Init();
         }
     }
 }

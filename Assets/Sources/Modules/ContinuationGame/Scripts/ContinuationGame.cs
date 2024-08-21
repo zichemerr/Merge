@@ -1,4 +1,5 @@
 using Finish;
+using SpawnSystem;
 using UnityEngine;
 using YG;
 
@@ -10,24 +11,26 @@ namespace GameContinuation
         [SerializeField] private GameObject _menu;
         [SerializeField] private ЯГовноКодер _яГовноКодер;
         [SerializeField] private FinishRoot _root;
+        [SerializeField] private SpawningRoot _spawningRoot;
 
-        private void OnEnable()
+        public void Init()
         {
-            YandexGame.RewardVideoEvent += Continue;
+            YandexGame.RewardVideoEvent += OnContinue;
         }
 
         private void OnDisable()
         {
-            YandexGame.RewardVideoEvent -= Continue;
+            YandexGame.RewardVideoEvent -= OnContinue;
         }
 
-        private void Continue(int value)
+        private void OnContinue(int reward)
         {
             _яГовноКодер.ХренМоржовый();
             _root.Delay();
+            //Time.timeScale = 1;
             _menu.SetActive(false);
-            Time.timeScale = 1;
             _playerInput.Activate();
+            //_spawningRoot.StartSpawnDelay(0);
         }
     }
 

@@ -186,14 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 6961751956532972570, guid: d4169657226455541b9ff1dff5b8d050, type: 3}
-<<<<<<< Updated upstream
-  _force: 4
---- !u!68 &240918031808832289
-EdgeCollider2D:
-=======
 --- !u!70 &3525734107372045862
 CapsuleCollider2D:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

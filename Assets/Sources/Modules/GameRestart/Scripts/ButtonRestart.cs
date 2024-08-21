@@ -13,6 +13,10 @@ namespace RestartGame
         internal void Init(Action clickAction)
         {
             _clickAction = clickAction;
+        }
+
+        private void OnEnable()
+        {
             _buttonManager.onClick.AddListener(OnClick);
         }
 

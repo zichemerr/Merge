@@ -21,7 +21,7 @@ namespace RestartGame
             _restartButton.Init(Restart);
         }
 
-        private void Restart()
+        public void Restart()
         {
             SceneManager.LoadScene(_indexActiveScene);
 			Restarted?.Invoke();

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace YG.Example
 {
@@ -9,11 +10,11 @@ namespace YG.Example
 		[SerializeField] string en;
 		[SerializeField] string tr;
 
-		Text textObj;
+        TextMeshProUGUI textObj;
 
 		private void Awake()
 		{
-			textObj = GetComponent<Text>();
+			textObj = GetComponent<TextMeshProUGUI>();
 			SwitchLanguage(YandexGame.savesData.language);
 		}
 
