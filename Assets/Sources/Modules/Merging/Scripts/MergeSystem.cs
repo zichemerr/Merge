@@ -1,16 +1,20 @@
 ﻿using Drag;
 using UnityEngine;
 using Circe;
+using System;
 
 namespace Merging
 {
     public class MergeSystem : MonoBehaviour
     {
+        public event Action Merged;
+
         public bool TryMergeItems(MergableItem firstItem, MergableItem secondItem, out MergableItem newItem)
         {
             if (firstItem.Compare(secondItem) && firstItem.HasNextTier)
             {
                 newItem = Merge(firstItem, secondItem);
+                Merged?.Invoke();
                 return true;
             }
 

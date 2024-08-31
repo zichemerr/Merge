@@ -10,12 +10,10 @@ namespace Drag
 		[SerializeField] private float _gravity;
 
         private Rigidbody2D _rigidbody;
-        private Collider2D _collider;
 
 		internal void Init()
         {
-			_rigidbody = GetComponent<Rigidbody2D>();
-			_collider = GetComponent<Collider2D>();
+            _rigidbody = GetComponent<Rigidbody2D>();
 		}
 
         private Vector2 SetFrames(Vector2 newPosition)
@@ -40,7 +38,6 @@ namespace Drag
         internal void Disable()
         {
             _rigidbody.isKinematic = false;
-            _collider.isTrigger = false;
             _rigidbody.AddForce(-Vector2.up * _gravity, ForceMode2D.Impulse);
             Destroy(this);
         }
